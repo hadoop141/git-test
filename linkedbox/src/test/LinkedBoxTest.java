@@ -11,6 +11,8 @@ public class LinkedBoxTest {
             System.out.println("i-->" + i);
         }
         System.out.println("size: "+linkedBox.size());
+        int data = linkedBox.get(3);  // 3代表索引  data ：4
+        System.out.println("data: "+data);
 
 
     }
