@@ -132,5 +132,32 @@ public class LinkedBox<T> {
         size++;
     }
 
+    //内部类：将一个类放在另一个类的内部，（属性/方法并列----全局  属性/方法的内部-----局部）
+    //Node是LinkedBox的全局内部类
+    //  省略了一个Java类文件
+    //  只有当前的LinkedBox类用得到，别人用不到
+    //  隐藏了底层存储的机制
+
+    // 是一个非常简单的对象
+    // 只负责存储真实的数据，上一个节点的地址，下一个结点的地址
+
+    //链表中的一个节点
+    private class Node<T> {
+
+        // 属性：data 数据
+        T data;
+        // 属性：next 指向下一个节点
+        Node<T> next;
+        // 属性：pre  指向上一个节点
+        Node<T> pre;
+
+        //有参构造器
+        public Node(Node<T> pre,T data,Node<T> next){
+            this.pre = pre;
+            this.data = data;
+            this.next = next;
+        }
+    }
+
 
 }
