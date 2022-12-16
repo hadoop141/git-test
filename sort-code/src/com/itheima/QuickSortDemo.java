@@ -1,6 +1,8 @@
 package com.itheima;
 
+import javax.xml.stream.events.EndDocument;
 import java.util.Arrays;
+import java.util.Random;
 
 /**
  * 算法步骤：
@@ -19,7 +21,15 @@ public class QuickSortDemo {
     public static void main(String[] args) {
         int[] arr = {1, 1, 6, 2, 7, 9, 3, 4, 5, 1, 10, 8};
 
-        quickSort(arr, 0, arr.length - 1);
+//        int[] arr = new int[1000000]; //1000,000  234ms
+//        Random r = new Random();
+//        for (int i = 0; i < arr.length; i++) {
+//            arr[i] = r.nextInt();
+//        }
+//        long start = System.currentTimeMillis();
+//        quickSort(arr, 0, arr.length - 1);
+//        long end = System.currentTimeMillis();
+//        System.out.println(end - start);
 
         System.out.println(Arrays.toString(arr));
     }
@@ -36,7 +46,7 @@ public class QuickSortDemo {
         int end = j;
 
         //递归出口，当start指针在end指针后面的时候，递归结束
-        if(start > end){
+        if (start > end) {
             return;
         }
         //记录基准数
@@ -75,7 +85,7 @@ public class QuickSortDemo {
         arr[i] = temp;
         //这样 基准数baseNumber左边的 就是比 他小的数， 右边，就是 比它大的数
         //再让左边的数据重复上面的步骤，也就是调用自己本身的方法 ，递归
-        quickSort(arr, i , start - 1);
+        quickSort(arr, i, start - 1);
         //右边同样
         quickSort(arr, start + 1, j);
 

@@ -2,6 +2,7 @@ package com.itheima;
 
 
 import java.util.Arrays;
+import java.util.Random;
 
 public class BubbleSortDemo {
     public static void main(String[] args) {
@@ -13,7 +14,22 @@ public class BubbleSortDemo {
             3，如果数组中有n个数据，总共我们只要执行n-1轮的代码就可以。
         */
         int[] arr = {2, 4, 5, 3, 1};
+//        int[] arr = new int[100000]; //10,000  234ms  100,000  28813ms
+//        Random r = new Random();
+//        for (int i = 0; i < arr.length; i++) {
+//            arr[i] = r.nextInt();
+//        }
+//        long start = System.currentTimeMillis();
+//        bubbleSort(arr);
+//        long end = System.currentTimeMillis();
+//        System.out.println(end - start);
 
+        bubbleSort(arr);
+        System.out.println(Arrays.toString(arr));
+
+    }
+
+    private static void bubbleSort(int[] arr) {
         //外循环 总共要比较 arr.length-1 趟
         for (int i = 1; i <= arr.length - 1; i++) {
 
@@ -35,9 +51,6 @@ public class BubbleSortDemo {
 
 
         }
-
-        System.out.println(Arrays.toString(arr));
-
     }
 
 

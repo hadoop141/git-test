@@ -1,6 +1,7 @@
 package com.itheima;
 
 import java.util.Arrays;
+import java.util.Random;
 
 public class SelectionDemo {
     public static void main(String[] args) {
@@ -13,6 +14,25 @@ public class SelectionDemo {
 
          */
         int[] arr = {2, 4, 5, 3, 1, 6};
+
+//        int[] arr = new int[100000]; // 10,000 190ms 100,000 24342ms
+//        Random r = new Random();
+//        for (int i = 0; i < arr.length; i++) {
+//            arr[i] = r.nextInt();
+//        }
+//        long start = System.currentTimeMillis();
+//        selectSort(arr);
+//        long end = System.currentTimeMillis();
+//        System.out.println(end - start);
+
+
+        selectSort(arr);
+        System.out.println(Arrays.toString(arr));
+
+
+    }
+
+    private static void selectSort(int[] arr){
 
         //外循环 循环 arr.length-1 次
         //i ： 每次拿着数组中那个数据 arr[i] 和 后面的数据作比较
@@ -27,9 +47,5 @@ public class SelectionDemo {
                 }
             }
         }
-
-        System.out.println(Arrays.toString(arr));
-
-
     }
 }
