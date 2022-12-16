@@ -1,4 +1,4 @@
-package com.itheima;
+package com.itheima.sort;
 
 
 import java.util.Arrays;

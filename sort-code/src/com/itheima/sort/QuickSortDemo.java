@@ -1,4 +1,4 @@
-package com.itheima;
+package com.itheima.sort;
 
 import javax.xml.stream.events.EndDocument;
 import java.util.Arrays;
