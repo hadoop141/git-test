@@ -3,7 +3,7 @@ package com.itheima.collection;
 /*
  * Collection遍历集合的三种方式，
  * 1.迭代器遍历
- * 2.增强for循环遍历
+ * 2.增强for遍历
  * 3.lambda表达式遍历
  */
 
