@@ -33,5 +33,11 @@ public class CollectionDemo {
         System.out.println(collection);
 
 
+        //5.判断集合是否为空isEmpty()
+        System.out.println(collection.isEmpty());
+
+        //6.获取集合中的长度 size()
+        System.out.println(collection.size());
+
     }
 }
