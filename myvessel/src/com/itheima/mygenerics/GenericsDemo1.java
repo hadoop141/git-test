@@ -12,7 +12,7 @@ public class GenericsDemo1 {
 
         //此时推出了泛型，可以在添加数据的时候就把类型统一
         //这样我们获取的数据类型，就是确定的，方便操作
-        ArrayList<String> list = new ArrayList();
+        ArrayList<String> list = new ArrayList<>();
 
         //2.添加数据,没规定泛型，可以加任意类型的数据 Object
         list.add("aaa");
