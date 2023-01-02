@@ -1,6 +1,5 @@
 package mytreemap;
 
-import java.util.StringJoiner;
 import java.util.TreeMap;
 
 public class TreeMapDemo1 {
